@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Afrolemmings</title>
+  <script>
+
+  </script>
+  <style>
+  .cloak {
+      display: inline-block;
+      background-color: pink;
+      text-align: center;
+  }
+
+  .eat {
+    color: red;
+    padding: 1em;
+    }
+
+  </style>
+</head>
+<body class="cloak">
+  <h1 class="eat"> What do you want to eat? </h1>
+  <!--<input type="number" id="num1" />
+  <input type="number" id="num2" /> -->
+  <div id='result'>
+  </div>
+    <select>
+      <option><a href="#">Eba</a></option>
+      <option><a href="#">Rice</a></option>
+      <option><a href="#">Yam and Egg</a></option>
+    </select>
+    <button onclick='doweet()'>Continue</button>
+
+<script>
+  var meal = document.querySelector('select'),
+//  var num1 = document.getElementById('num1'),
+    //  num2 = document.getElementById('num2'),
+  //    result = document.getElementById('result');
+  function doweet() {
+  console.log(meal); //Number(num1.value) + Number(num2.value) );
+  }
+
+</script>
+</body>
+</html>

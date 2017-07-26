@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Afrolemmings</title>
+  <script>
+
+  </script>
+  <style>
+  .cloak {
+      display: inline-block;
+      background-color: pink;
+      text-align: center;
+      padding: 80px
+  }
+
+  .eat {
+    color: red;
+    padding: 1em;
+    }
+
+  </style>
+</head>
+<body class="cloak">
+  <h1 class="eat"> What do you want to eat? </h1>
+
+    <select id='foodchoice' onchange='changeLink(this)'>
+      <option>Beans</option>
+      <option>Rice</option>
+    </select>
+
+  <a id='link' href='#'>Go To Food Page</a>
+<script>
+  var linkValue = document.querySelector('a'); //ideally should be get.ElementById()
+
+  function changeLink(that){
+    var link = that.value + '.html'
+    linkValue.setAttribute('href', link);
+  }
+</script>
+</body>
+</html>
